@@ -1,0 +1,19 @@
+version: "3"
+services:
+  web:
+    build:
+      dockerfile: web.Dockerfile
+      context: .
+    image: vue-test-web
+    container_name: vue-test-web
+    working_dir: /var/www
+    ports:
+      - 8080:8080
+    volumes:
+      - ./web:/var/www
+    networks:
+      - vue-test-network
+
+networks:
+  vue-test-network:
+    driver: bridge
