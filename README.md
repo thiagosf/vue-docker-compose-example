@@ -14,3 +14,9 @@ Next times:
 ```bash
 docker-compose up
 ```
+
+To test, access:
+
+http://localhost:8080/
+
+:rocket:
